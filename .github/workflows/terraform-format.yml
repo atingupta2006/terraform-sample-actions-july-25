@@ -10,6 +10,8 @@ jobs:
     name: Validate Terraform Code
     runs-on: ubuntu-latest
 
+    environment: AWS_ACCESS_KEY_ID
+    
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
