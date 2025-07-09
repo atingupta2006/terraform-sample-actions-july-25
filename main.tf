@@ -4,7 +4,7 @@ region = "us-east-1"
 
 variable "elb_names" {
   type = list
-  default = ["dev-loadbalancer", "stage-loadbalanacer","prod-loadbalancer"]
+  default = ["aghh-loadbalancer", "aghh-stage-loadbalanacer","aghh-prod-loadbalancer"]
 }
 
 resource "aws_iam_user" "lb" {
