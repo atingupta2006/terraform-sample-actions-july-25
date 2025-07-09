@@ -1,4 +1,5 @@
 provider "aws" {
+  region = "us-east-1"
 }
 
 variable "elb_names" {
@@ -11,6 +12,8 @@ resource "aws_iam_user" "lb" {
   count = 3
   path = "/system/"
 }
+
+
 
 output "iam_names" {
   value = aws_iam_user.lb[*].name
