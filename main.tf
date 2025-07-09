@@ -6,7 +6,7 @@ variable "elb_names" {
   default = ["dev-loadbalancer", "stage-loadbalanacer","prod-loadbalancer"]
 }
 
-resource "aws_iam_user" "lb" {
+resource "aws_iam_use" "lb" {
   name = var.elb_names[count.index]
   count = 3
   path = "/system/"
